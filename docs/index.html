@@ -29,44 +29,51 @@
   <div id="app">Loading Zoom Phone with Zendesk Docs...</div>
 
   <script>
-    window.$docsify = {
-      name: 'Documentation',
-      repo: 'vigneshm31-hash/Zoom-phone-with-zendesk',
-      loadSidebar: true,
-      loadNavbar: true,
-      mergeNavbar: true,
-      subMaxLevel: 2,
-      maxLevel: 4,
-      auto2top: true,
-      executeScript: true,
+   window.$docsify = {
+  name: 'Documentation',
+  repo: 'vigneshm31-hash/Zoom-phone-with-zendesk',
+  loadSidebar: true,
+  loadNavbar: true,
+  mergeNavbar: true,
+  subMaxLevel: 2,
+  maxLevel: 4,
+  auto2top: true,
+  executeScript: true,
 
-      // 🔑 Important for sidebar to work everywhere
-      alias: {
-        '/.*/_sidebar.md': '/_sidebar.md'
-      },
+  alias: {
+    '/.*/_sidebar.md': '/_sidebar.md'
+  },
 
-      // search plugin config
-      search: {
-        maxAge: 86400000, // 1 day cache
-        paths: 'auto',
-        placeholder: 'Search',
-        noData: 'No results!'
-      },
+  search: {
+    maxAge: 86400000,
+    paths: 'auto',
+    placeholder: 'Search',
+    noData: 'No results!'
+  },
 
-      plugins: [
-        function (hook) {
-          var footer = [
-            '<footer style="text-align: center; margin-top: 50px;">',
-            '<span>Zoom Phone with Zendesk &copy; 2025</span>',
-            '</footer>'
-          ].join('');
-
-          hook.afterEach(function (html) {
-            return html + footer;
-          });
-        }
-      ]
+  darklightTheme: {
+    defaultTheme: 'light',
+    toggleBtn: {
+      dark: '🌙',
+      light: '☀️'
     }
+  },
+
+  plugins: [
+    function (hook) {
+      var footer = [
+        '<footer style="text-align: center; margin-top: 50px;">',
+        '<span>Zoom Phone with Zendesk &copy; 2025</span>',
+        '</footer>'
+      ].join('');
+
+      hook.afterEach(function (html) {
+        return html + footer;
+      });
+    }
+  ]
+}
+
   </script>
 
   <!-- Docsify core -->
