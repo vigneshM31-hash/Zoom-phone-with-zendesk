@@ -1,9 +1,10 @@
 * Getting Started
-  * [Overview](getting-started/overview.md)
+  * [Getting Started](#/getting-started/overview)
 
 * Zoom Phone
-  * [Setup](zoomphone/setup.md)
+  * [Zoom Phone](#/zoom-phone/setup)
   * [Configuration](zoomphone/configuration.md)
   * [Usage](zoomphone/usage.md)
   * [FAQ](zoomphone/faq.md)
   * [Troubleshooting](zoomphone/troubleshooting.md)
+
