@@ -1,87 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Zoom Phone with Zendesk - Documentation</title>
-  <link rel="icon" href="_media/favicon.ico">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="keywords" content="zoom, zendesk, widget, docs, documentation">
-  <meta name="description" content="Zoom Phone with Zendesk Widget Documentation">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  
-  <!-- Dark/Light theme -->
-  <link 
-    rel="stylesheet"
-    href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css"
-    title="docsify-darklight-theme"
-    type="text/css"
-  />
-
-  <style>
-    nav.app-nav li ul {
-      min-width: 100px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <title>Zoom Phone in Zendesk</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" />
 </head>
-
 <body>
-  <div id="app">Loading Zoom Phone with Zendesk Docs...</div>
+  <div id="app">Loading...</div>
 
   <script>
     window.$docsify = {
-      name: 'Documentation',
-      repo: 'vigneshm31-hash/Zoom-phone-with-zendesk',
+      // logo (HTML allowed) + site name
+      name: '<img src="assets/images/artaLogo.jpg" width="44" style="vertical-align:middle; margin-right:8px;"> Documentation',
+
+      repo: 'vigneshM31-hash/Zoom-phone-with-zendesk',
+
+      // sidebar / navbar settings
       loadSidebar: true,
       loadNavbar: true,
       mergeNavbar: true,
-      subMaxLevel: 2,
-      maxLevel: 4,
-      auto2top: true,
-      executeScript: true,
 
-      // 🔑 Important for sidebar to work everywhere
+      // sidebar nesting depth
+      subMaxLevel: 2,
+
+      // Fix Docsify sidebar lookup on GitHub Pages (important)
       alias: {
         '/.*/_sidebar.md': '/_sidebar.md'
       },
 
-      // search plugin config
+      // other helpful options
+      auto2top: true,
+      executeScript: true,
+
+      // search plugin config (optional if you add the plugin)
       search: {
-        maxAge: 86400000, // 1 day cache
         paths: 'auto',
         placeholder: 'Search',
         noData: 'No results!'
-      },
-
-      plugins: [
-        function (hook) {
-          var footer = [
-            '<footer style="text-align: center; margin-top: 50px;">',
-            '<span>Zoom Phone with Zendesk &copy; 2025</span>',
-            '</footer>'
-          ].join('');
-
-          hook.afterEach(function (html) {
-            return html + footer;
-          });
-        }
-      ]
-    }
+      }
+    };
   </script>
 
-  <!-- Docsify core -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-  <!-- Search plugin -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-  <!-- Syntax highlighting -->
-  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-markdown.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-json.min.js"></script>
-  <!-- Dark/Light toggle -->
-  <script 
-    src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"
-    type="text/javascript">
-  </script>
 </body>
-
 </html>
